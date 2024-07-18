@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Fruta & Fruto</title>
+
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <!-- [INICIO] CSS PADRAO -->
+        <link rel="stylesheet" href="../../assets/css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" >
+        <link rel="stylesheet" href="../../assets/css/padrao.css">
+        <!-- [FIM] CSS PADRAO-->
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img class="logo" alt="Fruta e Fruto" src="./assets/img/logo.jpg">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item ativo"><a class="menu__link" href="#">Início</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Receitas</a></li>
+                    <li class="menu__item"><a class="menu__link"href="#">Quem Somos</a></li>
+                    <li class="menu__item"><a class="menu__link"href="#">Comunidade</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="baner">
+            <img class="baner__imagem" src="./assets/img/banner.jpg">
+            <h2 class="baner__titulo">Reaproveite melhor os alimentos!</h2>
+        </section>
+        <section class="sobre">
+           <h2 class="sobre__titulo">Receitas para economizar e ganhar saúde</h2> 
+           <p class="sobre__descricao">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar ganhar tempo e praticidade</p>
+        </section>
+
+        <section class="receitas">
+            <div class="receita">
+                <img alt="Tigela de abacate" class="receita__imagem" src="./assets/img/receitas/tigela-de-abacate.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Tigela de abacate</h4>
+                    <p class="receita__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img alt="Salada de kiwi" class="receita__imagem" src="./assets/img/receitas/salada-de-kiwi.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Salada de kiwi</h4>
+                    <p class="receita__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img alt="Mix de vegetais" class="receita__imagem" src="./assets/img/receitas/mix-de-vegetais.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Mix de vegetais</h4>
+                    <p class="receita__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img alt="Pimentões à Juliana" class="receita__imagem" src="./assets/img/receitas/pimentoes-a-juliana.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Pimentões à Juliana</h4>
+                    <p class="receita__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img alt="Prato oriental" class="receita__imagem" src="./assets/img/receitas/prato-oriental.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Prato oriental</h4>
+                    <p class="receita__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+            <div class="receita">
+                <img alt="Beterrabas assadas" class="receita__imagem" src="./assets/img/receitas/beterrabas-assadas.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Beterrabas assadas</h4>
+                    <p class="receita__descricao">Receita refrescante e cheia de vitaminas para seu café da manhã.</p>
+                    <button class="receita__botao">Ver receita</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="quem-somos">
+            <h3 class="quem-somos__titulo">Quem somos</h3>
+            <p class="quem-somos__descricao">Conheça a comunidade por trás da iniciativa</p>
+            <div class="pessoas">
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--roberta"></div>
+                    <span class="pessoa__nome">Roberta</span>
+                    <span class="pessoa__funcao">Conteúdo</span>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--marcela"></div>
+                    <span class="pessoa__nome">Marcela</span>
+                    <span class="pessoa__funcao">Chef de cozinha</span>
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--andreia"></div>
+                    <span class="pessoa__nome">Andréia</span>
+                    <span class="pessoa__funcao">Pequena Produtora</span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <!-- [INICIO] RODAPE PADRAO -->
+            <button class="btn-return"  onclick=" javascript: retorna_tela('../../views/home/index.html');">
+                <i class="bi bi-house"></i>
+            </button>
+            <div class="fab">
+                <button class="main">
+                </button>
+                <ul>
+                  <li>
+                    <label for="opcao1">&nbsp;</label>
+                    <button id="opcao1" onclick=" javascript: acessar_pagina('../../assets/documentos/curriculo');">
+                        <i class="bi bi-file-earmark"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <label for="opcao2">&nbsp;</label>
+                    <button id="opcao2" onclick=" javascript: acessar_pagina('https://www.linkedin.com/in/lincon-napolitano-machado/');">
+                        <i class="bi bi-linkedin"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <label for="opcao3">&nbsp;</label>
+                    <button id="opcao3" onclick=" javascript: acessar_pagina('https://wa.me/16997857870');">
+                        <i class="bi bi-whatsapp" ></i>
+                    </button>
+                  </li>
+                  <li>
+                    <label for="opcao4">&nbsp;</label>
+                    <button id="opcao4" onclick=" javascript: acessar_pagina('https://github.com/LinconNapolitano-dev/estudo');">
+                        <i class="bi bi-github"></i>
+                    </button>
+                  </li>
+                </ul>
+            </div>
+            <!-- [FIM] RODAPE PADRAO -->
+        </footer>
+
+        <script src="../../assets/js/jquery.js"></script>     
+        <script src="../../assets/js/bootstrap.js"  crossorigin="anonymous"></script>
+        <script src="../../assets/js/bootstrap.bundle.js"  crossorigin="anonymous"></script>
+
+        <!-- [INICIO] SCRIPT PADRAO -->
+        <script src="../../assets/js/padrao.js"  crossorigin="anonymous"></script>      
+        <!-- [FIM] RODAPE PADRAO -->
+    </body>
+</html>

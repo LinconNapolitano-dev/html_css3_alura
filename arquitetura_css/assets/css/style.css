@@ -1,0 +1,272 @@
+.cabecalho{
+	align-items: center;
+	background-color: #f9f9f9;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.menu__item{
+	list-style: none;
+}
+.menu__item:last-child .menu-link{
+	margin-right: 0;
+}
+.menu__link{
+	color: #808080;
+	margin-right: 1.25rem;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+.menu__link .ativo{
+	color: #333333;
+	font-weight: bold;
+}
+.menu__link:hover{
+	text-decoration: underline;
+}
+.menu__lista{
+	display: flex;
+}
+.baner{
+	position: relative;
+}
+.baner__titulo {
+    font-family: Pacifico, cursive;
+    color: #fdfdfd;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.baner__imagem{
+/*    background: url('../../img/banner.jpg') no-repeat center / cover;
+*/	width: 100%;
+	height: calc(100vh-72px);
+}
+.receita {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+.receitas {
+	background: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+}
+.receita__titulo {
+    font-size: 1.4375rem;
+}
+.receita-imagem {
+    height: 200px;
+}
+.receita__descricao {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+.receita__conteudo {
+    padding: 1rem;
+}
+.receita__botao {
+  background: #8d0606;
+  border: none;
+  border-radius: 5px;
+  color: #fdfdfd;
+  padding: 1rem;
+  transition: all . 1s ease-in-out;
+}
+.receita__botao:hover{
+	background-color: #620404;
+	cursor: pointer;
+}
+
+.sobre{
+	text-align: center;
+}
+.sobre__titulo{
+	color: #8d0606;
+	font-family: Pacifico, cursive;
+}
+.sobre__descricao{
+	color: #595959;
+	font-weight: 100;
+}
+.quem-somos{
+	text-align: center;
+	padding: 5rem;
+}
+.quem-somos__titulo{
+	margin-bottom: 1rem;
+	color: #8d0606;
+	font-size: 3rem;
+	font-family: Pacifico, cursive;
+}
+.quem-somos__descricao {
+    font-weight: 100;
+    font-size: 1.75rem;
+    color: #595959;
+}
+.pessoa{
+	display: flex;
+	flex-direction: column;: 
+}
+.pessoas{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3rem; 
+}
+.pessoa__nome{
+	color: #8d0606;
+	font-family: Pacifico, cursive;
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+.pessoa__imagem {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+}
+.pessoa__imagem--roberta {
+    background-image: url('../../img/pessoas/roberta.jpg');
+
+}
+
+.pessoa__imagem--marcela {
+    background-image: url('../../img/pessoas/marcela.jpg');
+
+}
+
+.pessoa__imagem--andreia {
+    background-image: url('../../img/pessoas/andreia.jpg');
+}
+.pessoa__funcao{
+	color: #595959;
+	font-size: 1.5rem;
+	text-transform: lowercase;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        justify-content: space-between;
+        padding: 0 5rem;
+
+    }
+}
+
+@media screen and (min-width: 768px){
+    .logo {
+        display: block;
+    }
+
+@media screen and (min-width: 768px) {
+    .baner__titulo {
+        font-size: 5.0625rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .baner__imagem {
+        height: calc(100vh - 72px);
+    }
+}
+@media screen and (min-width: 0) {
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sobre {
+        padding: 2.5rem;
+    }
+}
+@media screen and (min-width: 0px) {
+    .sobre__titulo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sobre__titulo {
+        font-size: 3.1875rem;
+    }
+}
+@media screen and (min-width: 0px) {
+    .sobre__descricao {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sobre__descricao {
+        font-size: 1.75rem;
+    }
+}
+@media screen and (min-width: 0) {
+    .receita {
+        margin-right: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .receita {
+        margin-right: 2.5rem;
+        width: calc(33% - 2.5rem)
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .receita {
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
+}
+@media screen and (min-width: 0) {
+    .receitas {
+        padding: 5rem 0 0 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .receitas {
+        padding: 5rem 0 0 2.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .receitas {
+        padding: 5rem 0 0 5rem;
+    }
+}
+@media screen and (min-width: 0) {
+    .pessoas {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pessoas {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 0) {
+    .pessoa {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pessoa {
+        margin-bottom: 0;
+    }
+}
