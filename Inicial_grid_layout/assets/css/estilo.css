@@ -1,0 +1,23 @@
+.titulo{
+    display: grid;
+    grid-column: 
+}
+.tipo_bolo{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%
+}
+
+.tipo_bolo div:nth-child(1){
+    display: grid;
+    grid-column: 2/2     
+}
+.tipo_bolo div:nth-child(2){
+    display: grid;
+    grid-column: 3/3     
+}
+.tipo_bolo div:nth-child(3){
+    display: grid;
+    grid-column: 4/4     
+}
