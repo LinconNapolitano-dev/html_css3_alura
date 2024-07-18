@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mario</title>
+
+    <script src="./js/script.js" defer></script>
+
+    <!-- [INICIO] CSS PADRAO -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" >
+    <link rel="stylesheet" href="../../assets/css/padrao.css">
+    <!-- [FIM] CSS PADRAO-->
+</head>
+<body>
+    
+    <div class="game-board">
+        <h1 class="score" id="score">SCORE: 00000</h1>
+        <img src="img/clouds.png" alt="" class="clouds">
+        <img src="img/mario.gif" alt="" class="mario">
+        <img src="img/pipe.png" alt="" class="pipe">
+    </div>
+
+    <footer>
+        <!-- [INICIO] RODAPE PADRAO -->
+        <button class="btn-return"  onclick=" javascript: retorna_tela('../../views/home/index.html');">
+            <i class="bi bi-house"></i>
+        </button>
+        <div class="fab">
+            <button class="main">
+            </button>
+            <ul>
+              <li>
+                <label for="opcao1">&nbsp;</label>
+                <button id="opcao1" onclick=" javascript: acessar_pagina('../../assets/documentos/curriculo');">
+                    <i class="bi bi-file-earmark"></i>
+                </button>
+              </li>
+              <li>
+                <label for="opcao2">&nbsp;</label>
+                <button id="opcao2" onclick=" javascript: acessar_pagina('https://www.linkedin.com/in/lincon-napolitano-machado/');">
+                    <i class="bi bi-linkedin"></i>
+                </button>
+              </li>
+              <li>
+                <label for="opcao3">&nbsp;</label>
+                <button id="opcao3" onclick=" javascript: acessar_pagina('https://wa.me/16997857870');">
+                    <i class="bi bi-whatsapp" ></i>
+                </button>
+              </li>
+              <li>
+                <label for="opcao4">&nbsp;</label>
+                <button id="opcao4" onclick=" javascript: acessar_pagina('https://github.com/LinconNapolitano-dev/estudo');">
+                    <i class="bi bi-github"></i>
+                </button>
+              </li>
+            </ul>
+        </div>
+        <!-- [FIM] RODAPE PADRAO -->
+    </footer>
+
+    <script src="../../assets/js/jquery.js"></script>     
+    <script src="../../assets/js/bootstrap.js"  crossorigin="anonymous"></script>
+    <script src="../../assets/js/bootstrap.bundle.js"  crossorigin="anonymous"></script>
+
+    <!-- [INICIO] SCRIPT PADRAO -->
+    <script src="../../assets/js/padrao.js"  crossorigin="anonymous"></script>      
+    <!-- [FIM] RODAPE PADRAO -->
+</body>
+</html>
