@@ -1,0 +1,200 @@
+:root {
+    --azul : #2571b7;
+    --branco : #FFFFFF;
+    --azulEscuro : #002050;
+    --azulClaro : #00a4ef;
+    --cinza: #6F6F6F;
+}
+
+.servico {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.servico h3 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 25pt;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.opcao{
+    width: 50vh;
+    height: auto;
+    padding: 2%;
+} 
+
+.fundoRadiu {
+    border-radius: 100% 100% 100%;
+    padding: 20px; 
+    width: 120px;
+    height: 100px; 
+    margin-left: 33%;
+}
+
+.imgOpcao {
+    margin-top: 10%;
+}
+
+.opcaoTxt h4 {
+    margin-top: 5%;
+}
+
+.linha {
+    border-bottom: 3px solid #dcdcdc;
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 10%;
+}
+
+.linhaInteira {
+    border-bottom: 3px solid #dcdcdc;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.tabela {
+    display: flex;
+    flex-wrap: wrap;  
+    border: 2px solid #dcdcdc;
+    text-align: center;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.celula {
+    width: 23%;
+    padding: 10px;
+    border-left: 2px solid #dcdcdc;
+    text-align: center;
+}
+
+.celula h5 {
+    font-size: 12pt;
+}
+
+.celula p {
+    font-size: 12pt;
+}
+
+#opcao1_mobile{
+    display: none;
+}
+
+#opcao2_mobile{
+    display: none;
+}
+
+#opcao3_mobile{
+    display: none;
+}
+
+@media (max-width: 1710px){
+    
+    .opcao {
+        width: 25vh;
+        padding: 1%;
+    }
+
+    .fundoRadiu {
+        margin-left: 15%;
+    }
+
+    .tabela {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 1315px){
+
+    .tabela {
+        display: block;
+        margin: 0;
+        
+    }
+
+    .celula {
+        border-bottom: 2px solid #dcdcdc;
+        padding: 3%;
+        width: auto;
+    }
+}
+
+@media (max-width: 890px){
+
+    #opcao1{
+        display: none;
+    }
+
+    #opcao2{
+        display: none;
+    }
+
+    #opcao3{
+        display: none;
+    }
+
+    #opcao1_mobile{
+        display: block;
+    }
+
+    #opcao2_mobile{
+        display: block;
+    }
+
+    #opcao3_mobile{
+        display: block;
+    }
+    
+    .opcoes{
+        display: block;
+    }
+
+    .opcao {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .opcaoTxt{
+        display: flex;
+        text-align: left;
+    }
+
+    .opcaoTxt p {
+        width: 70%;
+    }
+
+    .fundoRadiu {
+        height: 90px; 
+        margin-left: 33%;
+        padding: 20px; 
+        width: 110px;
+    }
+}
+
+@media (max-width: 570px){
+    .opcaoTxt p {
+        width: 80%;
+    }
+
+    .fundoRadiu {
+        height: 70px; 
+        margin-left: 10%;
+        padding: 20px; 
+        width: 90px;
+    }
+
+    .imgOpcao{
+        margin-bottom: 50px;
+    }
+}

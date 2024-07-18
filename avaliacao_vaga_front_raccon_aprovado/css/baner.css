@@ -1,0 +1,154 @@
+:root {
+    --azul : #2571b7;
+    --azulEscuro : #002050;
+    --azulClaro : #00a4ef;
+    --branco : #FFFFFF;
+}
+
+.baner {
+    height: 110vh;
+    width: 100%;
+    background-image: linear-gradient(50deg, rgb(0,0,0), rgb(0,0,0) 100%);
+}
+
+.banerImg {
+    filter: brightness(45%);
+    height: 110vh;
+    margin: auto;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, rgb(0,0,0) 50%);
+}
+
+.tituloBaner {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: -44%;
+    padding: 2%;
+    position: relative;
+    z-index: 10;
+}
+
+.tituloBaner h1 {
+    color: var(--branco);
+    font-size: 60pt;
+} 
+
+.tituloBaner p {
+    font-size: 30pt;
+    color: var(--branco);
+    margin-top: 60px;
+} 
+
+.tituloBaner button {
+	background-color: var(--azulClaro);
+    border: none;
+    color: var(--branco);
+    font-size: 15pt;
+    height: 50px;
+    width: 300px;
+}
+
+.rodapeBaner {
+    align-items: center;
+    display:  flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    margin-top: 20%;
+}
+.logoBaner {
+    width: 300px;
+    height: 50px;
+}
+
+.iconeBtn {
+    cursor: pointer;
+}
+
+@media (max-width: 1570px){
+    
+    .tituloBaner {
+        margin-top: -50%;
+    }
+
+    .rodapeBaner {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 1180px){
+    .tituloBaner {
+        margin-top: -70%;
+    }
+
+    #iconeBtnMobile{
+        display: none;
+    }
+
+    .rodapeBaner {
+        margin-top: 25%;
+    }
+    
+    .rodapeBaner img {
+        position: absolute;
+        margin-left: 35%;
+    }
+}
+
+@media (max-width: 858px){
+
+    .tituloBaner {
+        margin-top: -90vh;
+        position: absolute;
+        text-align: center;
+    }
+
+    .rodapeBaner {
+        margin-top: 35%;
+    }
+    
+    .rodapeBaner img {
+        margin-left: 30%;
+    }
+
+    .tituloBaner button {
+        font-size: 18pt;
+        height: 70px;
+        width: 350px;
+    }
+
+    .baner {
+        height: 90vh;
+    }
+
+    .banerImg {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 400px){
+    .tituloBaner {
+        margin-top: -70vh;
+    }
+
+    .tituloBaner h1 {
+        color: var(--branco);
+        font-size: 40pt;
+    } 
+    
+    .tituloBaner p {
+        color: var(--branco);
+        font-size: 25pt;
+        margin-top: 60px;
+    } 
+
+    .tituloBaner button {
+        font-size: 12pt;
+        height: 50px;
+        width: 250px;
+    }
+
+    .rodapeBaner img {
+        position: absolute;
+        margin-left: 22.5%;
+    }
+}

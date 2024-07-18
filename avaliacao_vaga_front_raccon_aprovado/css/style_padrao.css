@@ -1,0 +1,181 @@
+:root {
+    --azul : #2571b7;
+    --branco : #FFFFFF;
+    --azulEscuro : #002050;
+    --azulClaro : #00a4ef;
+    --cinza: #6F6F6F;
+    --laranja: #f24d1f;
+}
+
+.cor-laranja {color: var(--laranja);}
+.cor-cinza {color: var(--cinza);}
+.cor-azul {color: var(--azul);}
+.cor-azulClaro2  {color: #00aff0;}
+.cor-verdeClaro {color:#7fba00; }
+.cor-amarelo {color: #ffb900;}
+.cor-preto {color: rgb(0, 0, 0);}
+
+.fundo-azul {background-color: #2571b7;}
+.fundo-azulEscuro {background-color: #002050;}
+.fundo-azulClaro {background-color: #00a4ef;}
+.fundo-laranja {background-color: #f24d1f;}
+.fundo-verde {background-color: #207245;}
+.fundo-roxo {background-color: #733781;}
+.fundo-roxo2 {background-color: #5558af;}
+.fundo-azul2 {background-color: #0093BE;}
+.fundo-azulClaro2 {background-color: #00aff0;}
+.fundo-azulEscuro2 {background-color: #0073c6;}
+.fundo-verdeClaro {background-color: #7fba00;}
+.fundo-amarelo {background-color: #ffb900;}
+
+body {
+    font-family: 'Segoe UI', 'Segoeu UIB', 'Segoeu UIL';
+    margin: 0;
+    color:  var(--branco);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: var(--branco);
+}
+
+ul, li {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+label {
+    margin-bottom: 0.7em;
+    margin-top: 2.0em;
+    display: inline-block;
+}
+
+.inputForm {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: boder-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-semFundo-verdeClaro{
+    background: none;
+    border: 2px solid #7fba00;
+    color:#7fba00;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 45px;
+    text-align: center;
+    width: 120px;
+}
+
+.btn-semFundo-azulClaro{
+    background: none;
+    border: 2px solid #00aff0;
+    color:#00aff0;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 45px;
+    text-align: center;
+    width: 120px;
+}
+
+.btn-semFundo-amarelo{
+    background: none;
+    border: 2px solid #ffb900;
+    color:#ffb900;
+    font-size: 12pt;
+    font-weight: bold;
+    height: 45px;
+    text-align: center;
+    width: 120px;
+}
+
+.rodape{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.rodapeLogo {
+    display: flex; 
+    margin-left: 40%;
+}
+
+.iconeComposto{
+    display: inline-block;
+    width: 20%;
+}
+
+.rodapeTxt {
+    text-align: center;
+    opacity: 0.8;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 1580px){
+    .rodapeLogo {
+        margin-left: 30%;
+    }
+
+    .iconeComposto{
+        width: 35%;
+    }
+}
+
+@media (max-width: 890px){
+    .rodapeLogo {
+        margin-left: 20%;
+    }
+
+    .iconeComposto{
+        width: 50%;
+    }
+}
+
+@media (max-width: 570px){
+    .rodapeLogo {
+        margin-left: 10%;
+    }
+
+    .iconeComposto{
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px){
+    .rodapeLogo {
+        margin-left: 2%;
+    }
+
+    .iconeComposto{
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px){
+    .iconeComposto{
+        margin-left: 25%;
+    }
+
+    #iconeComposto2 {
+        display: none;
+    }
+}

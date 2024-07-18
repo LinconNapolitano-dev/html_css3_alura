@@ -1,0 +1,78 @@
+:root {
+    --azul : #2571b7;
+    --branco : #FFFFFF;
+    --azulEscuro : #002050;
+    --azulClaro : #00a4ef;
+    --cinza: #6F6F6F;
+}
+
+.faixa {
+    height: 60vh;
+    width: 100%;
+}
+
+.faixaImg {
+    height: 60vh;
+    width: 100%;
+    filter: brightness(45%);
+}
+
+.faixaTxt {
+    position: relative;
+    z-index: 10;
+    margin-top: -25%;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: center;
+}
+
+.faixaTxt p {
+    font-size: 40pt;
+    color: var(--branco);
+}
+
+@media (max-width: 1450px){
+    
+    .faixaTxt {
+        margin-top: -35%;
+    }
+}
+
+@media (max-width: 1000px){
+    .faixaTxt {
+        margin-top: -38%;
+    }
+
+    .faixaTxt p {
+        font-size: 30pt;
+    }
+}
+@media (max-width: 890px){
+    .faixaTxt {
+        margin-top: -55%;
+    }
+}
+
+@media (max-width: 600px){
+    .faixaTxt {
+        margin-top: -80%;
+    }
+
+    .faixaTxt p {
+        font-size: 20pt;
+    }
+}
+
+@media (max-width: 450px){
+    .faixaTxt {
+        margin-top: -90%;
+    }
+
+    .faixaTxt p {
+        font-size: 18pt;
+    }
+
+    .faixaImg {
+        height: 45vh;
+    }
+}

@@ -1,0 +1,94 @@
+:root {
+    --azul : #2571b7;
+    --branco : #FFFFFF;
+    --azulEscuro : #002050;
+    --azulClaro : #00a4ef;
+}
+
+a.active, a:hover {
+	background: var(--azulC);
+	transition: .5s;
+}
+
+.navBar{
+    align-items: center;
+    background-color:  var(--azul);
+    color: var(--branco);
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+	padding-left: 20vh;
+	padding-right: 20vh;
+}
+
+.menu {
+    display: flex;
+} 
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+	text-align: center;
+	width: 15vh;
+}
+
+.btnPrincipal {
+	background-color: var(--azulEscuro);
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+
+#logo {
+	display: block;
+}
+
+@media (max-width: 1150px){
+	.navBar{
+		padding-left: 2vh;
+		padding-right: 2vh;
+	}
+
+	.menu li {
+		margin-left: 5px;
+	}
+}
+
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+		margin-top: 0.5%;
+	}
+
+	#logo {
+		display: none;
+	}
+
+	.esconderMobile{
+		display: none;
+	}
+
+	#btnMobile {
+		display: block;
+		margin-top: -12%;
+	}
+
+	.navBar{
+		height: 10vh;
+		padding-left: 3vh;
+		padding-right: 3vh;
+	}
+}
